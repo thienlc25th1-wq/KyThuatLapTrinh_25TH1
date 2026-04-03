@@ -25,6 +25,7 @@ struct Person {
 struct  Node {
 	Person data;
 	Node* next;
+	Node(Person X) : data(X), next(nullptr) {}
 };
 struct LinkedList {
 	Node* head;
@@ -66,7 +67,6 @@ bool Remove(int x) {
 		item = item->next;
 	}
 }
-};
 int main() {
 	LinkedList list = { NULL };
 	do {
