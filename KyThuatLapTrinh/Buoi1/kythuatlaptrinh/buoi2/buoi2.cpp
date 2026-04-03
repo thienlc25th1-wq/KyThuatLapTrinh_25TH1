@@ -41,7 +41,7 @@ struct LinkedList {
 			item = item->next;
 		}
 	}
-};
+
 void Add(Person x) {
 	Node* newNode = new Node(x);
 	newNode->next = head;
@@ -67,6 +67,7 @@ bool Remove(int x) {
 		item = item->next;
 	}
 }
+};
 int main() {
 	LinkedList list = { NULL };
 	do {
